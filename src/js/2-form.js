@@ -30,16 +30,11 @@ const formData = {
     if (formData.email === "" || formData.message === "") {
       alert("Fill please all fields");
     } else {
-  
       console.log(formData);
-  
-
       localStorage.removeItem("feedback-form-state");
-  
       
       formData.email = "";
       formData.message = "";
-  
       
       document.querySelector('input[name="email"]').value = "";
       document.querySelector('textarea[name="message"]').value = "";
